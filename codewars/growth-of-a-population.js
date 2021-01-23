@@ -1,5 +1,4 @@
 const nbYear = (p0, percent, aug, p) => {
-  
     //Convert to percent
     const actualPercentage = percent / 100;
     let total = (p0 + p0 * actualPercentage + aug);
