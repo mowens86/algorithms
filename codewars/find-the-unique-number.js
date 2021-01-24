@@ -1,6 +1,10 @@
 const findUniq = (arr) => {
     // do magic
-    return arr.sort((a,b) => b - a).slice(0,1)[0];
+    const sorted = arr.sort((a,b) => b - a);
+    const checkFirst = sorted.slice(0,2);
+    const checkLast = sorted.slice(-2);
+    if(checkFirst[0] !== checkFirst[1]) return checkFirst[0];
+    if(checkLast[1] !== checkLast[0]) return checkLast[1];
   };
 
   /**
