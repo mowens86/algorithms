@@ -4,7 +4,7 @@ const sumAverage = (arr) => {
     arr.forEach((curr) => {
     // Use reduce to accumulate total then divide by arrays length    
       result += curr.reduce((acc, curr) => acc + curr) / curr.length;
-    })
+    });
     // Floor the result
     return Math.floor(result);
   };
