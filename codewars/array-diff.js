@@ -1,8 +1,8 @@
 const arrayDiff = (a, b) => {
     // Variables
     const answer = [];
-    a.forEach((num, index) => {
-      if (b.indexOf(num) === -1) answer.push(num)
+    a.forEach(num => {
+      if (b.indexOf(num) === -1) answer.push(num);
     });
     return answer;
   };
