@@ -50,7 +50,8 @@ const alphabetWar = (fight) => {
 
     Task
     Write a function that accepts fight string consists of only small letters and return who
-    wins the fight. When the left side wins return Left side wins!, when the right side wins return Right side wins!, in other case return Let's fight again!.
+    wins the fight. When the left side wins return Left side wins!, when the right side wins
+    return Right side wins!, in other case return Let's fight again!.
 
     The left side letters and their power:
 
