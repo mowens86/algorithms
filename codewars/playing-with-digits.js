@@ -1,16 +1,16 @@
 const digPow = (n, p) => {
-    // Varibales
+    // Variables
     const powArr = [];
-    // Convert to string and split into an array
+    // Convert to string and split into an array for each piece of of the string
     const convertedStrArr = n.toString().split('');
     // Loop through array
     convertedStrArr.forEach(num => {
-      // Push to powArr, multiply by p of converted string to num and 
+      // Push to powArr, convert num back to a number and multiply it by the power of p
       powArr.push(Math.pow(parseInt(num), p));
-      // Add 1 to p
+      // Add 1 to the power of p
       p++;
     });
-    // Reduce array and divide by n
+    // Reduce array and accumulate the total and divide by n
     const reducedArr = powArr.reduce((acc, num) => (acc + num)) / n;
     // Check if reducedArr leaves a whole number and return that if so, if not return -1
     return reducedArr % 1 === 0 ? reducedArr : -1;
@@ -25,10 +25,13 @@ const digPow = (n, p) => {
 
     46288 --> 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
 
-    Given a positive integer n written as abcd... (a, b, c, d... being digits) and a positive integer p
+    Given a positive integer n written as abcd... (a, b, c, d... being digits)
+    and a positive integer p
 
-    we want to find a positive integer k, if it exists, such as the sum of the digits of n taken to the successive powers of p is equal to k * n.
-    In other words:
+    we want to find a positive integer k, if it exists, such as the sum of the digits
+    of n taken to the successive powers of p is equal to k * n.
+    
+     In other words:
 
     Is there an integer k such as : (a ^ p + b ^ (p+1) + c ^(p+2) + d ^ (p+3) + ...) = n * k
 
