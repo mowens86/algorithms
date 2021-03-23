@@ -1,3 +1,4 @@
+// Version 1 -> Does not pass as it times out
 const partsSums = (ls) => {
     // Variables
     let copiedArr = [...ls];
@@ -14,6 +15,27 @@ const partsSums = (ls) => {
       copiedArr = copiedArr.slice(1,copiedArr.length);
     };
     // Push 0 at the end of listArr
+    listArr.push(0);
+    return listArr;
+  };
+
+  // Version 2 -> also does not pass as it times out -> will need to look up O(n)
+  const partsSums = (ls) => {
+    // Variables
+    let copiedArr = [...ls];
+    const listArr = [];
+    if (copiedArr.length === 0) return [0];
+    
+    // Loop through copiedArr
+    copiedArr.forEach((currVal, index, arr) => {
+      // Push into listArr
+      listArr.push(
+          // Slice at current index through rest of array
+          arr.slice(index, arr.length)
+          // Sum it all up
+          .reduce((a,b) => a + b));
+    });
+    
     listArr.push(0);
     return listArr;
   };
