@@ -1,11 +1,11 @@
-# List of Algorithms Solved on Codewars
+# Algorithms Solved
 
-## Honor Points
+## Honor Points & Folder Structure based on Katas for Codewars
 
-Completed Kata (White)	2	completion of a "beginner" level kata (8kyu and 7kyu)
-Completed Kata (Yellow)	8	completion of a "novice" level kata (6kyu and 5kyu)
-Completed Kata (Blue)	32	completion of a "competent" level kata (4kyu and 3kyu)
-Completed Kata (Purple)	128	completion of a "proficient" level kata (2kyu and 1 kyu)
+- Completed Kata (White)	2	completion of a "beginner" level kata (8kyu and 7kyu)
+- Completed Kata (Yellow)	8	completion of a "novice" level kata (6kyu and 5kyu)
+- Completed Kata (Blue)	32	completion of a "competent" level kata (4kyu and 3kyu)
+- Completed Kata (Purple)	128	completion of a "proficient" level kata (2kyu and 1 kyu)
 
 ## Other Algorithms Solved
 
