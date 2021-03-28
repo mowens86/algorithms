@@ -40,7 +40,7 @@ const partsSums = (ls) => {
     return listArr;
   };
 
-  /**
+  /** WORKS BUT NEEDS BETTER PERFORMANCE AS KATA TIMES OUT
    * Let us consider this example (array written in general format):
 
     ls = [0, 1, 3, 6, 10]
