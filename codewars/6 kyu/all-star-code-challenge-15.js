@@ -10,11 +10,11 @@ const rotate = (str) => {
     // Variable to hold current index to start on
     let currentIndex = 1;
     
-    // Do while loop
+    // While loop
     while(strLength !== 0) {
       // Substring for starting of word
       const startingStr = str.substring(currentIndex)
-      // Slice out remaining word up to index
+      // Substring out remaining word up to index
       const endingStr = str.substring(0, currentIndex)
       // Push to answer array
       answer.push(`${startingStr}${endingStr}`)
