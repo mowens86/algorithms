@@ -1,5 +1,5 @@
 const separateLiquids = (glass) => {
-    // Check length of glass
+    // Check length of glass is 0 and return empty array
     if (glass.length === 0) return [];
   
     // Concatenate all 2d portions of array
@@ -13,7 +13,7 @@ const separateLiquids = (glass) => {
     
     // Join and remove empty filtered arrays
     const filteredOrderedArr = [[...oilArr], [...alcoArr], [...waterArr], [...honeyArr]].filter(el => el != null && el != '');
-    // Join all arrays into one
+    // Concat the filteredOrderedArray
     const orderedConcatArr = [].concat.apply([], filteredOrderedArr);
     
     // Function to chunk array
@@ -28,8 +28,7 @@ const separateLiquids = (glass) => {
       }
       return chunkedArr;
     };
-
-    // Use function to chunk array and 
+    // Use function to chunk array and return result
     const result = chunkArray(orderedConcatArr, glass[0].length);
     return result;
   };
