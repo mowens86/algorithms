@@ -9,8 +9,6 @@ const balanceStatements = (list) => {
     };
     const splitStocks = list.split(', ');
     
-    
-    
     const mappedStocks = splitStocks.map(stock => {
       const splitStock = stock.split(' ');
       const quantity = Number(splitStock[1]);
